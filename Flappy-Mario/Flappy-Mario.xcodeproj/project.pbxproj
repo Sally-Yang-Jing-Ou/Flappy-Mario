@@ -30,6 +30,7 @@
 		081F5FB31968F88A008CE53E /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB21968F88A008CE53E /* Score.m */; };
 		081F5FB71968FA09008CE53E /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB61968FA09008CE53E /* GameOver.m */; };
 		081F5FB91968FAF2008CE53E /* pinkCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FB81968FAF2008CE53E /* pinkCloud.png */; };
+		081F5FBD1968FBEF008CE53E /* OverDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FBC1968FBEF008CE53E /* OverDetection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		081F5FB51968FA09008CE53E /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
 		081F5FB61968FA09008CE53E /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
 		081F5FB81968FAF2008CE53E /* pinkCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkCloud.png; path = ../../../../Desktop/pinkCloud.png; sourceTree = "<group>"; };
+		081F5FBB1968FBEF008CE53E /* OverDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverDetection.h; sourceTree = "<group>"; };
+		081F5FBC1968FBEF008CE53E /* OverDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverDetection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 				081F5F7C1968F04C008CE53E /* AppDelegate.h */,
 				081F5F7D1968F04C008CE53E /* AppDelegate.m */,
 				081F5F7F1968F04C008CE53E /* Images.xcassets */,
+				081F5FBA1968FBD3008CE53E /* OverDetection */,
 				081F5FB01968F86C008CE53E /* Score */,
 				081F5FB41968F9E3008CE53E /* GameOver */,
 				081F5F9E1968F6A4008CE53E /* Images */,
@@ -203,6 +207,15 @@
 				081F5FB61968FA09008CE53E /* GameOver.m */,
 			);
 			name = GameOver;
+			sourceTree = "<group>";
+		};
+		081F5FBA1968FBD3008CE53E /* OverDetection */ = {
+			isa = PBXGroup;
+			children = (
+				081F5FBB1968FBEF008CE53E /* OverDetection.h */,
+				081F5FBC1968FBEF008CE53E /* OverDetection.m */,
+			);
+			name = OverDetection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +326,7 @@
 				081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */,
 				081F5F7A1968F04C008CE53E /* main.m in Sources */,
 				081F5FB71968FA09008CE53E /* GameOver.m in Sources */,
+				081F5FBD1968FBEF008CE53E /* OverDetection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
