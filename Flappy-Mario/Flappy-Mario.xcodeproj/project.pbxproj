@@ -28,6 +28,8 @@
 		081F5FAC1968F6F0008CE53E /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAB1968F6F0008CE53E /* mario.png */; };
 		081F5FAE1968F710008CE53E /* straw.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAD1968F710008CE53E /* straw.png */; };
 		081F5FB31968F88A008CE53E /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB21968F88A008CE53E /* Score.m */; };
+		081F5FB71968FA09008CE53E /* GameOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB61968FA09008CE53E /* GameOver.m */; };
+		081F5FB91968FAF2008CE53E /* pinkCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FB81968FAF2008CE53E /* pinkCloud.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		081F5FAD1968F710008CE53E /* straw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = straw.png; path = ../../../../Downloads/straw.png; sourceTree = "<group>"; };
 		081F5FB11968F88A008CE53E /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		081F5FB21968F88A008CE53E /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		081F5FB51968FA09008CE53E /* GameOver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOver.h; sourceTree = "<group>"; };
+		081F5FB61968FA09008CE53E /* GameOver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOver.m; sourceTree = "<group>"; };
+		081F5FB81968FAF2008CE53E /* pinkCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkCloud.png; path = ../../../../Desktop/pinkCloud.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,7 @@
 				081F5F7D1968F04C008CE53E /* AppDelegate.m */,
 				081F5F7F1968F04C008CE53E /* Images.xcassets */,
 				081F5FB01968F86C008CE53E /* Score */,
+				081F5FB41968F9E3008CE53E /* GameOver */,
 				081F5F9E1968F6A4008CE53E /* Images */,
 				081F5F741968F04C008CE53E /* Supporting Files */,
 			);
@@ -171,6 +177,7 @@
 				081F5FAD1968F710008CE53E /* straw.png */,
 				081F5FAB1968F6F0008CE53E /* mario.png */,
 				081F5F9F1968F6D7008CE53E /* apple.png */,
+				081F5FB81968FAF2008CE53E /* pinkCloud.png */,
 				081F5FA01968F6D7008CE53E /* background1.png */,
 				081F5FA11968F6D7008CE53E /* background2.png */,
 				081F5FA21968F6D7008CE53E /* down.png */,
@@ -187,6 +194,15 @@
 				081F5FB21968F88A008CE53E /* Score.m */,
 			);
 			name = Score;
+			sourceTree = "<group>";
+		};
+		081F5FB41968F9E3008CE53E /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				081F5FB51968FA09008CE53E /* GameOver.h */,
+				081F5FB61968FA09008CE53E /* GameOver.m */,
+			);
+			name = GameOver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +284,7 @@
 				081F5FAE1968F710008CE53E /* straw.png in Resources */,
 				081F5F781968F04C008CE53E /* InfoPlist.strings in Resources */,
 				081F5FA51968F6D7008CE53E /* apple.png in Resources */,
+				081F5FB91968FAF2008CE53E /* pinkCloud.png in Resources */,
 				081F5FA91968F6D7008CE53E /* ground.png in Resources */,
 				081F5FA71968F6D7008CE53E /* background2.png in Resources */,
 				081F5F801968F04C008CE53E /* Images.xcassets in Resources */,
@@ -295,6 +312,7 @@
 				081F5FB31968F88A008CE53E /* Score.m in Sources */,
 				081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */,
 				081F5F7A1968F04C008CE53E /* main.m in Sources */,
+				081F5FB71968FA09008CE53E /* GameOver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
