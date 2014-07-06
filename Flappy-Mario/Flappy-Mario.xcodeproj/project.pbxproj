@@ -27,6 +27,7 @@
 		081F5FAA1968F6D7008CE53E /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA41968F6D7008CE53E /* up.png */; };
 		081F5FAC1968F6F0008CE53E /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAB1968F6F0008CE53E /* mario.png */; };
 		081F5FAE1968F710008CE53E /* straw.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAD1968F710008CE53E /* straw.png */; };
+		081F5FB31968F88A008CE53E /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB21968F88A008CE53E /* Score.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		081F5FA41968F6D7008CE53E /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/up.png"; sourceTree = "<group>"; };
 		081F5FAB1968F6F0008CE53E /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mario.png; path = ../../../../Downloads/mario.png; sourceTree = "<group>"; };
 		081F5FAD1968F710008CE53E /* straw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = straw.png; path = ../../../../Downloads/straw.png; sourceTree = "<group>"; };
+		081F5FB11968F88A008CE53E /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		081F5FB21968F88A008CE53E /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,7 @@
 				081F5F7C1968F04C008CE53E /* AppDelegate.h */,
 				081F5F7D1968F04C008CE53E /* AppDelegate.m */,
 				081F5F7F1968F04C008CE53E /* Images.xcassets */,
+				081F5FB01968F86C008CE53E /* Score */,
 				081F5F9E1968F6A4008CE53E /* Images */,
 				081F5F741968F04C008CE53E /* Supporting Files */,
 			);
@@ -174,6 +178,15 @@
 				081F5FA41968F6D7008CE53E /* up.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		081F5FB01968F86C008CE53E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				081F5FB11968F88A008CE53E /* Score.h */,
+				081F5FB21968F88A008CE53E /* Score.m */,
+			);
+			name = Score;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081F5FB31968F88A008CE53E /* Score.m in Sources */,
 				081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */,
 				081F5F7A1968F04C008CE53E /* main.m in Sources */,
 			);
