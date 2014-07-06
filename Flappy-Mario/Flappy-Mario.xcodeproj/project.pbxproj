@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081F5F6E1968F04C008CE53E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F6D1968F04C008CE53E /* Foundation.framework */; };
+		081F5F701968F04C008CE53E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F6F1968F04C008CE53E /* CoreGraphics.framework */; };
+		081F5F721968F04C008CE53E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F711968F04C008CE53E /* UIKit.framework */; };
+		081F5F781968F04C008CE53E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 081F5F761968F04C008CE53E /* InfoPlist.strings */; };
+		081F5F7A1968F04C008CE53E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5F791968F04C008CE53E /* main.m */; };
+		081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5F7D1968F04C008CE53E /* AppDelegate.m */; };
+		081F5F801968F04C008CE53E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081F5F7F1968F04C008CE53E /* Images.xcassets */; };
+		081F5F871968F04C008CE53E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F861968F04C008CE53E /* XCTest.framework */; };
+		081F5F881968F04C008CE53E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F6D1968F04C008CE53E /* Foundation.framework */; };
+		081F5F891968F04C008CE53E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081F5F711968F04C008CE53E /* UIKit.framework */; };
+		081F5F911968F04C008CE53E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 081F5F8F1968F04C008CE53E /* InfoPlist.strings */; };
+		081F5F931968F04C008CE53E /* Flappy_MarioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5F921968F04C008CE53E /* Flappy_MarioTests.m */; };
+		081F5FA51968F6D7008CE53E /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5F9F1968F6D7008CE53E /* apple.png */; };
+		081F5FA61968F6D7008CE53E /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA01968F6D7008CE53E /* background1.png */; };
+		081F5FA71968F6D7008CE53E /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA11968F6D7008CE53E /* background2.png */; };
+		081F5FA81968F6D7008CE53E /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA21968F6D7008CE53E /* down.png */; };
+		081F5FA91968F6D7008CE53E /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA31968F6D7008CE53E /* ground.png */; };
+		081F5FAA1968F6D7008CE53E /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FA41968F6D7008CE53E /* up.png */; };
+		081F5FAC1968F6F0008CE53E /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAB1968F6F0008CE53E /* mario.png */; };
+		081F5FAE1968F710008CE53E /* straw.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FAD1968F710008CE53E /* straw.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		081F5F8A1968F04C008CE53E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 081F5F621968F04C008CE53E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 081F5F691968F04C008CE53E;
+			remoteInfo = "Flappy-Mario";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081F5F6A1968F04C008CE53E /* Flappy-Mario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy-Mario.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081F5F6D1968F04C008CE53E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		081F5F6F1968F04C008CE53E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		081F5F711968F04C008CE53E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		081F5F751968F04C008CE53E /* Flappy-Mario-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy-Mario-Info.plist"; sourceTree = "<group>"; };
+		081F5F771968F04C008CE53E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		081F5F791968F04C008CE53E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		081F5F7B1968F04C008CE53E /* Flappy-Mario-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flappy-Mario-Prefix.pch"; sourceTree = "<group>"; };
+		081F5F7C1968F04C008CE53E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		081F5F7D1968F04C008CE53E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		081F5F7F1968F04C008CE53E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		081F5F851968F04C008CE53E /* Flappy-MarioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy-MarioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		081F5F861968F04C008CE53E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		081F5F8E1968F04C008CE53E /* Flappy-MarioTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy-MarioTests-Info.plist"; sourceTree = "<group>"; };
+		081F5F901968F04C008CE53E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		081F5F921968F04C008CE53E /* Flappy_MarioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_MarioTests.m; sourceTree = "<group>"; };
+		081F5F9F1968F6D7008CE53E /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apple.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/apple.png"; sourceTree = "<group>"; };
+		081F5FA01968F6D7008CE53E /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background1.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/background1.png"; sourceTree = "<group>"; };
+		081F5FA11968F6D7008CE53E /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background2.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/background2.png"; sourceTree = "<group>"; };
+		081F5FA21968F6D7008CE53E /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/down.png"; sourceTree = "<group>"; };
+		081F5FA31968F6D7008CE53E /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ground.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/ground.png"; sourceTree = "<group>"; };
+		081F5FA41968F6D7008CE53E /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = "../../../../Downloads/XinYunBird 2/XinYunBird/up.png"; sourceTree = "<group>"; };
+		081F5FAB1968F6F0008CE53E /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mario.png; path = ../../../../Downloads/mario.png; sourceTree = "<group>"; };
+		081F5FAD1968F710008CE53E /* straw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = straw.png; path = ../../../../Downloads/straw.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		081F5F671968F04C008CE53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5F701968F04C008CE53E /* CoreGraphics.framework in Frameworks */,
+				081F5F721968F04C008CE53E /* UIKit.framework in Frameworks */,
+				081F5F6E1968F04C008CE53E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081F5F821968F04C008CE53E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5F871968F04C008CE53E /* XCTest.framework in Frameworks */,
+				081F5F891968F04C008CE53E /* UIKit.framework in Frameworks */,
+				081F5F881968F04C008CE53E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081F5F611968F04C008CE53E = {
+			isa = PBXGroup;
+			children = (
+				081F5F731968F04C008CE53E /* Flappy-Mario */,
+				081F5F8C1968F04C008CE53E /* Flappy-MarioTests */,
+				081F5F6C1968F04C008CE53E /* Frameworks */,
+				081F5F6B1968F04C008CE53E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		081F5F6B1968F04C008CE53E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F6A1968F04C008CE53E /* Flappy-Mario.app */,
+				081F5F851968F04C008CE53E /* Flappy-MarioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		081F5F6C1968F04C008CE53E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F6D1968F04C008CE53E /* Foundation.framework */,
+				081F5F6F1968F04C008CE53E /* CoreGraphics.framework */,
+				081F5F711968F04C008CE53E /* UIKit.framework */,
+				081F5F861968F04C008CE53E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		081F5F731968F04C008CE53E /* Flappy-Mario */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F7C1968F04C008CE53E /* AppDelegate.h */,
+				081F5F7D1968F04C008CE53E /* AppDelegate.m */,
+				081F5F7F1968F04C008CE53E /* Images.xcassets */,
+				081F5F9E1968F6A4008CE53E /* Images */,
+				081F5F741968F04C008CE53E /* Supporting Files */,
+			);
+			path = "Flappy-Mario";
+			sourceTree = "<group>";
+		};
+		081F5F741968F04C008CE53E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F751968F04C008CE53E /* Flappy-Mario-Info.plist */,
+				081F5F761968F04C008CE53E /* InfoPlist.strings */,
+				081F5F791968F04C008CE53E /* main.m */,
+				081F5F7B1968F04C008CE53E /* Flappy-Mario-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081F5F8C1968F04C008CE53E /* Flappy-MarioTests */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F921968F04C008CE53E /* Flappy_MarioTests.m */,
+				081F5F8D1968F04C008CE53E /* Supporting Files */,
+			);
+			path = "Flappy-MarioTests";
+			sourceTree = "<group>";
+		};
+		081F5F8D1968F04C008CE53E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				081F5F8E1968F04C008CE53E /* Flappy-MarioTests-Info.plist */,
+				081F5F8F1968F04C008CE53E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		081F5F9E1968F6A4008CE53E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				081F5FAD1968F710008CE53E /* straw.png */,
+				081F5FAB1968F6F0008CE53E /* mario.png */,
+				081F5F9F1968F6D7008CE53E /* apple.png */,
+				081F5FA01968F6D7008CE53E /* background1.png */,
+				081F5FA11968F6D7008CE53E /* background2.png */,
+				081F5FA21968F6D7008CE53E /* down.png */,
+				081F5FA31968F6D7008CE53E /* ground.png */,
+				081F5FA41968F6D7008CE53E /* up.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		081F5F691968F04C008CE53E /* Flappy-Mario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081F5F961968F04C008CE53E /* Build configuration list for PBXNativeTarget "Flappy-Mario" */;
+			buildPhases = (
+				081F5F661968F04C008CE53E /* Sources */,
+				081F5F671968F04C008CE53E /* Frameworks */,
+				081F5F681968F04C008CE53E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flappy-Mario";
+			productName = "Flappy-Mario";
+			productReference = 081F5F6A1968F04C008CE53E /* Flappy-Mario.app */;
+			productType = "com.apple.product-type.application";
+		};
+		081F5F841968F04C008CE53E /* Flappy-MarioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 081F5F991968F04C008CE53E /* Build configuration list for PBXNativeTarget "Flappy-MarioTests" */;
+			buildPhases = (
+				081F5F811968F04C008CE53E /* Sources */,
+				081F5F821968F04C008CE53E /* Frameworks */,
+				081F5F831968F04C008CE53E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				081F5F8B1968F04C008CE53E /* PBXTargetDependency */,
+			);
+			name = "Flappy-MarioTests";
+			productName = "Flappy-MarioTests";
+			productReference = 081F5F851968F04C008CE53E /* Flappy-MarioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		081F5F621968F04C008CE53E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					081F5F841968F04C008CE53E = {
+						TestTargetID = 081F5F691968F04C008CE53E;
+					};
+				};
+			};
+			buildConfigurationList = 081F5F651968F04C008CE53E /* Build configuration list for PBXProject "Flappy-Mario" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 081F5F611968F04C008CE53E;
+			productRefGroup = 081F5F6B1968F04C008CE53E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				081F5F691968F04C008CE53E /* Flappy-Mario */,
+				081F5F841968F04C008CE53E /* Flappy-MarioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		081F5F681968F04C008CE53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5FAC1968F6F0008CE53E /* mario.png in Resources */,
+				081F5FAE1968F710008CE53E /* straw.png in Resources */,
+				081F5F781968F04C008CE53E /* InfoPlist.strings in Resources */,
+				081F5FA51968F6D7008CE53E /* apple.png in Resources */,
+				081F5FA91968F6D7008CE53E /* ground.png in Resources */,
+				081F5FA71968F6D7008CE53E /* background2.png in Resources */,
+				081F5F801968F04C008CE53E /* Images.xcassets in Resources */,
+				081F5FA61968F6D7008CE53E /* background1.png in Resources */,
+				081F5FAA1968F6D7008CE53E /* up.png in Resources */,
+				081F5FA81968F6D7008CE53E /* down.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081F5F831968F04C008CE53E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5F911968F04C008CE53E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		081F5F661968F04C008CE53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */,
+				081F5F7A1968F04C008CE53E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		081F5F811968F04C008CE53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5F931968F04C008CE53E /* Flappy_MarioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		081F5F8B1968F04C008CE53E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 081F5F691968F04C008CE53E /* Flappy-Mario */;
+			targetProxy = 081F5F8A1968F04C008CE53E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		081F5F761968F04C008CE53E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081F5F771968F04C008CE53E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		081F5F8F1968F04C008CE53E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				081F5F901968F04C008CE53E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		081F5F941968F04C008CE53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		081F5F951968F04C008CE53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		081F5F971968F04C008CE53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy-Mario/Flappy-Mario-Prefix.pch";
+				INFOPLIST_FILE = "Flappy-Mario/Flappy-Mario-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		081F5F981968F04C008CE53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy-Mario/Flappy-Mario-Prefix.pch";
+				INFOPLIST_FILE = "Flappy-Mario/Flappy-Mario-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		081F5F9A1968F04C008CE53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy-Mario.app/Flappy-Mario";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy-Mario/Flappy-Mario-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Flappy-MarioTests/Flappy-MarioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		081F5F9B1968F04C008CE53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flappy-Mario.app/Flappy-Mario";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy-Mario/Flappy-Mario-Prefix.pch";
+				INFOPLIST_FILE = "Flappy-MarioTests/Flappy-MarioTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		081F5F651968F04C008CE53E /* Build configuration list for PBXProject "Flappy-Mario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081F5F941968F04C008CE53E /* Debug */,
+				081F5F951968F04C008CE53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		081F5F961968F04C008CE53E /* Build configuration list for PBXNativeTarget "Flappy-Mario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081F5F971968F04C008CE53E /* Debug */,
+				081F5F981968F04C008CE53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		081F5F991968F04C008CE53E /* Build configuration list for PBXNativeTarget "Flappy-MarioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				081F5F9A1968F04C008CE53E /* Debug */,
+				081F5F9B1968F04C008CE53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 081F5F621968F04C008CE53E /* Project object */;
+}
