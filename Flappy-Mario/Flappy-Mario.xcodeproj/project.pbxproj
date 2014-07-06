@@ -31,6 +31,8 @@
 		081F5FB71968FA09008CE53E /* Over.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FB61968FA09008CE53E /* Over.m */; };
 		081F5FB91968FAF2008CE53E /* pinkCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 081F5FB81968FAF2008CE53E /* pinkCloud.png */; };
 		081F5FBD1968FBEF008CE53E /* OverDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FBC1968FBEF008CE53E /* OverDetection.m */; };
+		081F5FC31969140A008CE53E /* MarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FC21969140A008CE53E /* MarioViewController.m */; };
+		081F5FC71969152D008CE53E /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5FC61969152D008CE53E /* Food.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		081F5FB81968FAF2008CE53E /* pinkCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinkCloud.png; path = ../../../../Desktop/pinkCloud.png; sourceTree = "<group>"; };
 		081F5FBB1968FBEF008CE53E /* OverDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverDetection.h; sourceTree = "<group>"; };
 		081F5FBC1968FBEF008CE53E /* OverDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverDetection.m; sourceTree = "<group>"; };
+		081F5FC11969140A008CE53E /* MarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarioViewController.h; sourceTree = "<group>"; };
+		081F5FC21969140A008CE53E /* MarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarioViewController.m; sourceTree = "<group>"; };
+		081F5FC51969152D008CE53E /* Food.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		081F5FC61969152D008CE53E /* Food.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +142,10 @@
 			children = (
 				081F5F7C1968F04C008CE53E /* AppDelegate.h */,
 				081F5F7D1968F04C008CE53E /* AppDelegate.m */,
+				081F5FC11969140A008CE53E /* MarioViewController.h */,
+				081F5FC21969140A008CE53E /* MarioViewController.m */,
 				081F5F7F1968F04C008CE53E /* Images.xcassets */,
+				081F5FC419691511008CE53E /* Food */,
 				081F5FBA1968FBD3008CE53E /* OverDetection */,
 				081F5FB01968F86C008CE53E /* Score */,
 				081F5FB41968F9E3008CE53E /* GameOver */,
@@ -216,6 +225,15 @@
 				081F5FBC1968FBEF008CE53E /* OverDetection.m */,
 			);
 			name = OverDetection;
+			sourceTree = "<group>";
+		};
+		081F5FC419691511008CE53E /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				081F5FC51969152D008CE53E /* Food.h */,
+				081F5FC61969152D008CE53E /* Food.m */,
+			);
+			name = Food;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,10 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				081F5FB31968F88A008CE53E /* Score.m in Sources */,
+				081F5FC71969152D008CE53E /* Food.m in Sources */,
 				081F5F7E1968F04C008CE53E /* AppDelegate.m in Sources */,
 				081F5F7A1968F04C008CE53E /* main.m in Sources */,
 				081F5FB71968FA09008CE53E /* Over.m in Sources */,
 				081F5FBD1968FBEF008CE53E /* OverDetection.m in Sources */,
+				081F5FC31969140A008CE53E /* MarioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
