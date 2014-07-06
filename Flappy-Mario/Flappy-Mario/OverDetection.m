@@ -7,6 +7,7 @@
 //
 
 #import "OverDetection.h"
+#import "MarioViewController.h"
 
 @implementation OverDetection
 + (void) detection:(NSInteger)marioTopY :(NSInteger)marioButtomY :(NSInteger)marioRight :(UIView*)back1 :(UIView*)back2 :(UIView*)b1pipe1 :(UIView*)b1pipe2 :(UIView*)b2pipe1 :(UIView*)b2pipe2
@@ -50,7 +51,7 @@
         [MarioViewController gameOver];
     }
     
-    else if (marioRight - 160 == back2.frame.origin.x && marioTopY >= 439 + (b2pipe2.frame.origin.y)
+    else if (marioRight - 160 == back2.frame.origin.x && marioTopY >= 439 + b2pipe2.frame.origin.y)
     {
         [MarioViewController gameOver];
     }

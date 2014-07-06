@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MarioViewController.h"
 
 @implementation AppDelegate
 
