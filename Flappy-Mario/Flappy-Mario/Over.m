@@ -22,7 +22,7 @@
     best.font = [UIFont boldSystemFontOfSize:30];
     
     scoreLabel.frame = CGRectMake(-30, 140, 300, 30);
-    scoreLabel.text = [NSString stringWithFormat:@"Current Score: %d",score];
+    scoreLabel.text = [NSString stringWithFormat:@"Current score: %ld",(long)score];
     [mainBack addSubview:scoreLabel];
     [mainBack addSubview:best];
     best.text = [NSString stringWithFormat:@"Best Score: %ld",(long)[Score bestScore]];

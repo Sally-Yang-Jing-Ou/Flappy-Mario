@@ -13,7 +13,7 @@
     if (rect1.origin.x == 58 && marioTopY >= (b1pipe1.frame.origin.y + 319 + 20)){
         food11.hidden = YES;
         score += 1;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     else if (rect1.origin.x  == -102){
         if (b1pipe2.hidden == YES){
@@ -21,23 +21,23 @@
         }
         food12.hidden = YES;
         score += 1;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     else if (rect2.origin.x == 58){
         food21.hidden = YES;
         score += 1;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     else if (rect2.origin.x == -102){
         food22.hidden = YES;
         score += 1;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     
     else if (rect2.origin.x == -32 && (straw2.frame.origin.y - 28 <= marioTopY && straw2.frame.origin.y + 34 >= marioTopY)){
         straw2.hidden = YES;
         score +=2;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     
     else if (rect1.origin.x == -32 && (straw1.frame.origin.y - 28 <= marioTopY && straw1.frame.origin.y + 34 >= marioTopY)){
@@ -46,7 +46,7 @@
         }
         straw1.hidden = YES;
         score +=2;
-        scoreLabel.text = [NSString stringWithFormat:@"score: %d",score];
+        scoreLabel.text = [NSString stringWithFormat:@"score: %ld",(long)score];
     }
     return score;
 }

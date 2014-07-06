@@ -92,7 +92,7 @@ static UILabel *scoreLabel;
     
     [self getReady];
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.008
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.005
                                              target:self
                                            selector:@selector(update)
                                            userInfo:nil
@@ -121,7 +121,7 @@ static UILabel *scoreLabel;
     if (startNow == YES && gameState == StartGame)
     {
         [self updateMario];
-        [self updateBg];
+        [self updateBackground];
         [self createPipes];
         [self setFood];
         [self safeOrDie];
@@ -237,7 +237,7 @@ static UILabel *scoreLabel;
     if (back1.frame.origin.x == -53)
     {
         CGRect rect = b1pipe1.frame;
-        rect.origin.y = tmpY - 120;
+        rect.origin.y = tmpY - 160;
         b1pipe1.frame = rect;
         if (b1pipe1.hidden == YES)
         {
@@ -252,7 +252,7 @@ static UILabel *scoreLabel;
     else if (back1.frame.origin.x == -213)
     {
         CGRect rect = b1pipe2.frame;
-        rect.origin.y = tmpY - 120;
+        rect.origin.y = tmpY - 160;
         b1pipe2.frame = rect;
         if (b1pipe2.hidden == YES)
         {
@@ -266,7 +266,7 @@ static UILabel *scoreLabel;
     else if (back2.frame.origin.x == -53)
     {
         CGRect rect = b2pipe1.frame;
-        rect.origin.y = tmpY - 120;
+        rect.origin.y = tmpY - 160;
         b2pipe1.frame = rect;
         if (food21.hidden == YES)
         {
@@ -276,7 +276,7 @@ static UILabel *scoreLabel;
     else if (back2.frame.origin.x == -213)
     {
         CGRect rect = b2pipe2.frame;
-        rect.origin.y = tmpY - 120;
+        rect.origin.y = tmpY - 160;
         b2pipe2.frame = rect;
         if (food22.hidden == YES)
         {
@@ -291,7 +291,7 @@ static UILabel *scoreLabel;
     if (back2.frame.origin.x == -145)
     {
         CGRect copy = straw2.frame;
-        copy.origin.y = randomY;
+        copy.origin.y = randomY + 45;
         straw2.frame = copy;
         if (straw2.hidden == YES)
         {
@@ -302,7 +302,7 @@ static UILabel *scoreLabel;
     else if (back1.frame.origin.x == -145)
     {
         CGRect copy = straw1.frame;
-        copy.origin.y = randomY;
+        copy.origin.y = randomY + 45;
         straw1.frame = copy;
         if (straw1.hidden == YES)
         {
@@ -347,7 +347,7 @@ static UILabel *scoreLabel;
     marioFrame.frame = rect;
 }
 
-- (void) updateBg
+- (void) updateBackground
 {
     CGRect rect1 = back1.frame;
     CGRect rect2 = back2.frame;
@@ -379,7 +379,7 @@ static UILabel *scoreLabel;
 - (UIView *) pipesAtX:(float) originX
 {
     NSInteger tmpY = rand()%120;
-    UIView *pipeFrame = [[UIView alloc] initWithFrame:CGRectMake(originX, tmpY - 120, 52, 758)];
+    UIView *pipeFrame = [[UIView alloc] initWithFrame:CGRectMake(originX, tmpY - 200, 52, 758)];
     
     UIImageView *topPipe = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 52, 319)];
     topPipe.image = [UIImage imageNamed:@"up"];
@@ -389,7 +389,7 @@ static UILabel *scoreLabel;
     [pipeFrame addSubview:buttomPipe];
     return pipeFrame;
 }
-
+//apples between pipes
 - (UIView *) addFoodatX:(float) originX
 {
     UIView *foodView =[[UIView alloc] initWithFrame:CGRectMake(originX, 358, 50, 50)];
@@ -398,7 +398,7 @@ static UILabel *scoreLabel;
     [foodView addSubview:food];
     return foodView;
 }
-
+//strawberry
 - (UIView *) addAppleAtX:(float) originX
 {
     NSInteger randomY = 140 + (rand() % 200);
